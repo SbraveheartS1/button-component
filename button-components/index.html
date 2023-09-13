@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <title>Button Components</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="layout">
+    <div class="layout__left">
+      <div class="layout__logo-container">
+        <span class="logo-container__dev"><span class="logo-container__name">Dev</span>challenges.io</span>
+      </div>
+      <nav class="layout__navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Colors</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Typography</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Spaces</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link navbar__link--active">Buttons</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Inputs</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Grid</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="layout__right">
+        <header class="layout__header">
+          <h3 class="header__title">
+            Buttons
+          </h3>
+        </header>
+        <section class="layout__content">
+          <article class="content__buttons">
+
+            <div class="buttons__button">
+              <span class="button__description">&lt;Button/&gt;</span>
+              <button class="button__btn button__btn--1"> <i class=""></i> Default </button>
+            </div>
+
+            <div class="buttons__button">
+              <span class="button__description button__description--hover">&:hover, &:focus</span>
+              <button class="button__btn button__btn--2"> Default </button>
+            </div>
+
+            <div class="buttons__button">
+              <span class="button__description">&lt;Button variant="outline"/&gt;</span>
+              <button class="button__btn button__btn--3"> Default </button>
+            </div>
+
+            <div class="buttons__button">
+              <span class="button__description button__description--hover">&:hover, &:focus</span>
+              <button class="button__btn button__btn--4"> Default </button>
+            </div>
+
+            <div class="buttons__button">
+              <span class="button__description">&lt;Button variant="text"/&gt;</span>
+              <button class="button__btn button__btn--5"> Default </button>
+            </div>
+
+            <div class="buttons__button">
+              <span class="button__description button__description--hover">&:hover, &:focus</span>
+              <button class="button__btn button__btn--6"> Default </button>
+            </div>
+
+          </article>
+
+          <article class="content__disabled-buttons">
+            
+            <div class="disabled-buttons__disabled-button disabled-buttons__disabled-button--100">
+              <span class="disabled-button__description">&lt;Button disableShadow /&gt;</span>
+              <button class="disabled-button__btn disabled-button__btn--1">Default</button>
+            </div>
+
+            <div class="disabled-buttons__disabled-button disabled-buttons__disabled-button--50">
+              <span class="disabled-button__description disabled-button__description--2">&lt;Button disabled /&gt;</span>
+              <button class="disabled-button__btn disabled-button__btn--2">Disabled</button>
+            </div>
+
+            <div class="disabled-buttons__disabled-button disabled-buttons__disabled-button--50">
+              <span class="disabled-button__description disabled-button__description--3">&lt;Button variant="text" disabled/&gt;</span>
+              <button class="disabled-button__btn disabled-button__btn--3">Disabled</button>
+            </div>
+
+          </article>
+
+          <article class="content__icon-buttons">
+            
+            <div class="icon-buttons__icon-button">
+              <span class="icon-button__description">&lt;Button startIcon="local_grocery_store" /&gt;</span>
+              <button class="icon-button__btn icon-button__btn--1"> <img src="assets/img/add-cart.png" class="icon-button__img"> Default</button>
+            </div>
+
+            <div class="icon-buttons__icon-button">
+              <span class="icon-button__description">&lt;Button endIcon="local_grocery_store" /&gt;</span>
+              <button class="icon-button__btn icon-button__btn--2">Default <img src="assets/img/add-cart.png" class="icon-button__img"></button>
+            </div>
+
+          </article>
+
+          <article class="content__sizes-buttons">
+            
+            <div class="sizes-buttons__size-button">
+              <span class="size-button__description">&lt;Button size="sm" /&gt;</span>
+              <button class="size-button__btn size-button__btn--1">Default</button>
+            </div>
+
+            <div class="sizes-buttons__size-button">
+              <span class="size-button__description">&lt;Button size="md" /&gt;</span>
+              <button class="size-button__btn size-button__btn--2">Default</button>
+            </div>
+
+            <div class="sizes-buttons__size-button">
+              <span class="size-button__description">&lt;Button size="lg" /&gt;</span>
+              <button class="size-button__btn size-button__btn--3">Default</button>
+            </div>
+
+          </article>
+
+
+          <article class="content__colors-buttons">
+            
+            <div class="colors-buttons__color-button">
+              <span class="color-button__description">&lt;Button color="default" /&gt;</span>
+              <button class="color-button__btn color-button__btn--1">Default</button>
+            </div>
+
+            <div class="colors-buttons__color-button">
+              <span class="color-button__description">&lt;Button color="primary" /&gt;</span>
+              <button class="color-button__btn color-button__btn--2">Default</button>
+            </div>
+
+            <div class="colors-buttons__color-button">
+              <span class="color-button__description">&lt;Button color="secondary" /&gt;</span>
+              <button class="color-button__btn color-button__btn--3">Secondary</button>
+            </div>
+
+            <div class="colors-buttons__color-button">
+              <span class="color-button__description">&lt;Button color="danger" /&gt;</span>
+              <button class="color-button__btn color-button__btn--4">Danger</button>
+            </div>
+
+            <div class="colors-buttons__color-button">
+              <span class="color-button__description button__description--hover">&:hover, &:focus</span>
+              <button class="color-button__btn color-button__btn--5">Default</button>
+            </div>
+
+            <div class="colors-buttons__color-button">
+              <button class="color-button__btn color-button__btn--6">Default</button>
+            </div>
+
+            <div class="colors-buttons__color-button">
+                  <button class="color-button__btn color-button__btn--7">Secondary</button>
+            </div>
+
+            <div class="colors-buttons__color-button">
+                  <button class="color-button__btn color-button__btn--8">Danger</button>
+            </div>
+          </article>
+
+          <footer class="content__footer">
+              <span class="footer__icon-url">Icons: <a class="footer__link" href="http://material.io/resources/icons/?style=round">http://material.io/resources/icons/?style=round</a></span>
+              <span class="footer__createdby">created by <a class="footer__creator" href="https://github.com/SbraveheartS1">José Martínez</a> - devChallenges.io</span>
+          </footer>
+
+        </section>
+    </div>
+  </div>
+</body>
+</html>
