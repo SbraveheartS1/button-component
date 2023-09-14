@@ -27,6 +27,7 @@
 
     --color-footer-creator: #A9A9A9;
 
+    --color-border-input-blue: #2962FF;
     --font-family-ubuntu: "Ubuntu Mono";
 }
 
@@ -149,7 +150,12 @@ body{
 .disabled-button__description,
 .icon-button__description,
 .size-button__description,
-.color-button__description{
+.color-button__description,
+.first-input__description,
+.second-input__description,
+.third-input__description,
+.fourth-input__description,
+.fifth-input__description{
     margin-bottom: 1.5rem;
     font-family: var(--font-family-ubuntu);
     font-size: 1.2rem;
@@ -384,4 +390,268 @@ body{
 .footer__createdby:hover>.footer__creator,
 .footer__link:hover{
     color: var(--color-button-description-black);
+}
+
+/* INPUTS */
+
+
+
+.first-input__input-text,
+.second-input__input-text,
+.third-input__input-text,
+.fourth-input__input-text,
+.fifth-input__input-text{
+    padding: 1.5rem 1rem;
+    background-color: none;
+    border-radius: 8px;
+    margin-top: 1rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: Noto Sans;
+    line-height: 20.27px;
+    text-align: left;
+    vertical-align: middle;
+
+    transition: all 200ms ease-in-out;
+}
+
+
+.content__first-inputs{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:3rem;
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.first-input__description{
+    margin-bottom: 3rem;
+}
+
+.first-input__input-text{
+    width: 85%;
+    flex-basis: calc(33.3% - 3rem);
+
+    margin-top: 4rem;
+}
+
+.first-input__input-text:focus,
+.second-input__input-text:focus,
+.third-input__input-text:focus,
+.fourth-input__input-text:focus,
+.fifth-input__input-text:focus {
+    outline: none;
+}
+
+.first-inputs__first-input{
+    position: relative;
+}
+
+.first-inputs__first-input--1::after,
+.first-inputs__first-input--2::after,
+.first-inputs__first-input--3::after,
+.first-inputs__first-input--4::after,
+.first-inputs__first-input--5::after,
+.first-inputs__first-input--6::after,
+.first-inputs__first-input--7::after,
+.second-inputs__second-input--1::after,
+.second-inputs__second-input--2::after,
+.second-inputs__second-input--3::after,
+.second-inputs__second-input--4::after,
+.second-inputs__second-input--5::after,
+.third-inputs__third-input::after,
+.fourth-inputs__fourth-input::after {
+    content: "Label";
+
+    position: absolute;
+    left: 0%;
+    top: 35%;
+
+    font-size: 1.2rem;
+}
+
+.first-inputs__first-input--1::after,
+.first-inputs__first-input--2::after,
+.first-inputs__first-input--5::after,
+.first-inputs__first-input--7::after,
+.second-inputs__second-input--1::after,
+.second-inputs__second-input--3::after,
+.second-inputs__second-input--4::after,
+.second-inputs__second-input--5::after{
+    color: var(--color-button-description);
+}
+
+.first-inputs__first-input--4::after,
+.first-inputs__first-input--6::after,
+.second-inputs__second-input--2::after,
+.second-inputs__second-input--2::before{
+    color: var(--color-bg-button-background-4);
+}
+
+.first-inputs__first-input--3::after{
+    color: var(--color-text-secondary);
+}
+
+.first-input__input-text--border-gray,
+.second-input__input-text--border-gray,
+.second-input__input-text--border-gray--2,
+.second-input__input-text--border-gray--3,
+.second-input__input-text--border-gray--4,
+.third-input__input-text,
+.fourth-input__input-text,
+.fifth-input__input-text{
+    border: 1px solid var(--color-button-description-with-opacity);
+}
+
+.first-input__input-text--border-black{
+    border: 1px solid var(--color-button-description);
+}
+
+.first-input__input-text--border-blue{
+    border: 1px solid var(--color-border-input-blue);
+}
+
+.first-input__input-text--border-red,
+.second-input__input-text--border-red{
+    border: 1px solid var(--color-bg-button-background-4);
+}
+
+.first-input__input-text--bg-gray{
+    border: none;
+    background-color: var(--color-bg-button);
+}
+
+.content__second-inputs,
+.content__third-inputs,
+.content__fifth-inputs{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.second-inputs__second-input,
+.third-inputs__third-input,
+.fifth-inputs__fifth-input{
+    position: relative;
+    flex-basis: calc(50% - 1.5rem);
+    margin-bottom: 5rem;
+}
+
+.second-input__input-text,
+.third-input__input-text,
+.fifth-input__input-text{
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.first-input__input-text::placeholder,
+.second-input__input-text::placeholder{
+    color: var(--color-button-description-with-opacity);
+    font-size: 1.4rem;
+}
+
+.second-input__input-text--border-gray--2::placeholder,
+.fourth-input__input-text::placeholder{
+    color: var(--color-button-description);
+    font-weight: 500;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.second-inputs__second-input--1::before,
+.second-inputs__second-input--2::before{
+    position: absolute;
+    left: 0%;
+    bottom: -20%;
+    content: "Some interesting text";
+    font-size: 1rem;
+}
+
+.second-inputs__second-input--1::before{
+    color: var(--color-button-description-with-opacity);
+}
+
+.second-input__input-text--border-gray--4{
+    padding-right: 4rem;
+}
+
+.second-input__input-text--border-gray--3{
+    padding-left: 3.5rem;
+}
+
+.second-input__icon--1{
+    position: absolute;
+    bottom: 13%;
+    left: 2%;
+}
+
+.second-input__icon--2{
+    position: absolute;
+    bottom: 13%;
+    left: 40%;
+}
+
+.content__third-inputs,
+.content__fifth-inputs{
+    width: 46%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+.content__third-inputs{
+    margin-top: -4rem;
+}
+
+.third-input__input-sm,
+.fifth-input__input-text{
+    padding: 0.8rem 1rem;
+    width: 56%;
+}
+
+.third-input__input-md{
+    width: 54%;
+}
+
+.fourth-inputs__fourth-input,
+.fifth-inputs__fifth-input{
+    margin-top: -2rem;
+    position: relative;
+}
+
+.fourth-input__input-text{
+    margin-top: 3rem;
+    width: 70%;
+}
+
+.content__fifth-inputs{
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+}
+
+.fifth-input__input-text{
+    display: block;
+    resize: none;
+    height: 130%;
+
+    padding-top: 1.5rem;
+}
+
+.fifth-inputs__fifth-input::after{
+    content: "Label";
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    font-size: 1.2rem;
 }

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./assets/css/styles.css">
+  <title>Button Components</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="layout">
+    <div class="layout__left">
+      <div class="layout__logo-container">
+        <span class="logo-container__dev"><span class="logo-container__name">Dev</span>challenges.io</span>
+      </div>
+      <nav class="layout__navbar">
+        <ul class="navbar__list">
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Colors</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Typography</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Spaces</a>
+          </li>
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__link">Buttons</a>
+          </li>
+          <li class="navbar__item">
+            <a href="input.html" class="navbar__link navbar__link--active">Inputs</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#" class="navbar__link">Grid</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="layout__right">
+        <header class="layout__header">
+          <h3 class="header__title">
+            Inputs
+          </h3>
+        </header>
+        <section class="layout__content">
+
+          <article class="content__first-inputs">
+
+              <div class="first-inputs__first-input first-inputs__first-input--1">
+                  <span class="first-input__description">&lt;Input /&gt;</span>
+                  <input type="text" placeholder="Placeholder" class="first-input__input-text first-input__input-text--border-gray ">
+              </div>
+
+              <div class="first-inputs__first-input first-inputs__first-input--2">
+                <span class="first-input__description first-input__description--hover">&:hover</span>
+                <input type="text" placeholder="Placeholder" class="first-input__input-text first-input__input-text--border-black ">
+              </div>
+
+              <div class="first-inputs__first-input first-inputs__first-input--3">
+                <span class="first-input__description first-input__description--hover">&:focus</span>
+                <input type="text" placeholder="Placeholder" class="first-input__input-text first-input__input-text--border-blue ">
+              </div>
+
+              <div class="first-inputs__first-input first-inputs__first-input--4">
+                <span class="first-input__description">&lt;Input error /&gt;</span>
+                <input type="text" placeholder="Placeholder" class="first-input__input-text first-input__input-text--border-red ">
+              </div>
+
+              <div class="first-inputs__first-input first-inputs__first-input--5">
+                <span class="first-input__description first-input__description--hover">&:hover</span>
+                <input type="text" placeholder="Placeholder" class="first-input__input-text first-input__input-text--border-black ">
+              </div>
+
+              <div class="first-inputs__first-input first-inputs__first-input--6">
+                <span class="first-input__description first-input__description--hover">&:focus</span>
+                <input type="text" placeholder="Placeholder" class="first-input__input-text first-input__input-text--border-red ">
+              </div>
+
+              <div class="first-inputs__first-input first-inputs__first-input--7">
+                <span class="first-input__description">&lt;Input disabled /&gt;</span>
+                <input type="text" placeholder="Placeholder" class="first-input__input-text first-input__input-text--bg-gray ">
+              </div>
+
+          </article>
+
+          <article class="content__second-inputs">
+
+            <div class="second-inputs__second-input second-inputs__second-input--1">
+              <span class="second-input__description">&lt;Input helperText="Some interesting text" /&gt;</span>
+              <input type="text" placeholder="Placeholder" class="second-input__input-text second-input__input-text--border-gray ">
+            </div>
+
+            <div class="second-inputs__second-input second-inputs__second-input--2">
+              <span class="second-input__description">&lt;Input helperText="Some interesting text" error/&gt;</span>
+              <input type="text" placeholder="Placeholder" class="second-input__input-text second-input__input-text--border-red ">
+            </div>
+
+            <div class="second-inputs__second-input second-inputs__second-input--3">
+              <span class="second-input__description">&lt;Input startIcon /&gt;</span>
+              <input type="text" placeholder="Placeholder" class="second-input__input-text second-input__input-text--border-gray--3 ">
+              <span class="material-icons second-input__icon--1">call</span>
+            </div>
+
+            <div class="second-inputs__second-input second-inputs__second-input--4">
+              <span class="second-input__description">&lt;Input endIcon /&gt;</span>
+              <input type="text" placeholder="Placeholder" class="second-input__input-text second-input__input-text--border-gray--4 ">
+              <span class="material-icons second-input__icon--2">lock</span>
+            </div>
+
+            <div class="second-inputs__second-input second-inputs__second-input--5">
+              <span class="second-input__description">&lt;Input value="text" /&gt;</span>
+              <input type="text" placeholder="Text" class="second-input__input-text second-input__input-text--border-gray--2 ">
+            </div>
+              
+          </article>
+
+          <article class="content__third-inputs">
+
+            <div class="third-inputs__third-input">
+              <span class="third-input__description">&lt;Input size="sm" /&gt;</span>
+              <input type="text" placeholder="Placeholder" class="third-input__input-text third-input__input-sm ">
+            </div>
+
+            <div class="third-inputs__third-input">
+              <span class="third-input__description">&lt;Input size="md" /&gt;</span>
+              <input type="text" placeholder="Placeholder" class="third-input__input-text third-input__input-md ">
+            </div>
+              
+          </article>
+
+          <article class="content__fourth-inputs">
+
+            <div class="fourth-inputs__fourth-input fourth-input__fourth-input--1">
+              <span class="fourth-input__description">&lt;Input fullWidth /&gt;</span>
+              <input type="text" placeholder="Text" class="fourth-input__input-text fourth-input__input-fullwidth ">
+            </div>
+              
+          </article>
+
+          <article class="content__fifth-inputs">
+
+            <div class="fifth-inputs__fifth-input">
+              <span class="fifth-input__description">&lt;Input multiline row="4" /&gt;</span>
+              <textarea type="text" placeholder="Placeholder" class="fifth-input__input-text"></textarea>
+            </div>
+              
+          </article>
+
+          <footer class="content__footer">
+              <span class="footer__createdby">created by <a class="footer__creator" href="https://github.com/SbraveheartS1">José Martínez</a> - devChallenges.io</span>
+          </footer>
+
+        </section>
+    </div>
+  </div>
+</body>
+</html>
